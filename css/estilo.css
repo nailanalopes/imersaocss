@@ -1,0 +1,40 @@
+body {
+    background-image: url("https://png.pngtree.com/thumb_back/fw800/background/20190903/pngtree-background-wallpaper-technology-image_313705.jpg");
+   background-size: auto 200vh;
+   font-family: Arial; 
+   height: 200vh;
+ }
+ 
+ .menu {
+   background-color: white;
+ }
+ 
+ .menu ul {
+   display: flex;
+   justify-content: space-around;
+ }
+ 
+ .menu li {
+   list-style: none;
+ }
+ 
+ a {
+   color: #8470FF;
+   text-decoration: none;  
+ }
+ 
+ a:hover {
+   text-decoration: underline;
+ }
+ 
+ .site-title,
+ .site-subtitle {
+   color: #473C8B;
+   text-align: center;
+ }
+ 
+ .site-subtitle {
+   font-style: italic;
+ }
+ 
+ 
