@@ -7,6 +7,8 @@
     <title>Nailana Lopes</title>
     <link rel="stylesheet" href="css/estilo.css">
     <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch&family=Handlee&family=Niconne&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0c4bde0f7e.js" crossorigin="anonymous"></script>
+
 
 </head>
 
@@ -15,37 +17,38 @@
         <nav class="menu">
             <ul>
                 <li><a href="#">Sobre</a></li>
-                <li><a href="#">Projetos</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="#portfolio">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
-        <div>
+        <div class="titulo">
             <h1 class="site-title">Nailana Lopes</h1>
             <h2 class="site-subtitle">Jr. FrontEnd Developer</h2>
         </div>
     </header>
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
         <h2>Projetos</h2>
 
         <div class="grid">
             <figure>
-                <img class="img-portfolio"
-                    src="../imersaocss/img/CERTIFICADO.png"
-                    alt="eCommerce">
+                <img class="img-portfolio" src="../imersaocss/img/CERTIFICADO.png" alt="eCommerce">
                 <figcaption>Quarentena Dev Alura</figcaption>
             </figure>
             <figure>
-                <img class="img-portfolio"
-                    src="../imersaocss/img/pag apresent arbyte.png">
+                <img class="img-portfolio" src="../imersaocss/img/pag apresent arbyte.png">
                 <figcaption>Página de Apresentação ArByte</figcaption>
             </figure>
-            <figure>
-                <img class="img-portfolio"
-                    src="../imersaocss/img/imersaoCSS-aula2/img/webdesign-creditos-domenico-loia-unsplash.jpg"
-                    alt="Web design">
-                <figcaption>Imersão CSS Alura</figcaption>
-            </figure>
-
+        </div>
+        <section class="contato" id="contato">
+            <h2>Contato</h2>
+            <div class="grid icons">
+                <a target="_blank" href="https://github.com/nailanalopes">
+                    <i class="fab fa-github-alt"></i>
+                </a>
+                <a target="_blank" href="https://www.linkedin.com/in/nailana-lopes">
+                    <i class="fab fa-linkedin"></i>
+            </div>
+        </section>
         </div>
     </section>
 </body>
