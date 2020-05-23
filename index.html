@@ -15,7 +15,7 @@
 <body>
     <header>
         <nav class="menu">
-            <ul>
+            <ul class="container">
                 <li><a href="#">Sobre</a></li>
                 <li><a href="#portfolio">Projetos</a></li>
                 <li><a href="#contato">Contato</a></li>
@@ -26,20 +26,59 @@
             <h2 class="site-subtitle">Jr. FrontEnd Developer</h2>
         </div>
     </header>
-    <section class="portfolio" id="portfolio">
+
+    <section class="sobre container">
+        <h2>Sobre</h2>
+        <figure class="avatar">
+            <img src="https://nailanalopes.github.io/img/nailana.jpeg" alt="Nailana Lopes">
+        </figure>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt soluta necessitatibus quos amet provident ipsam accusantium quibusdam dolorem, quis consequatur ab harum iste unde distinctio numquam voluptates, eligendi tempore excepturi!
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt soluta necessitatibus quos amet provident ipsam accusantium quibusdam dolorem, quis consequatur ab harum iste unde distinctio numquam voluptates, eligendi tempore excepturi!
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt soluta necessitatibus quos amet provident ipsam accusantium quibusdam dolorem, quis consequatur ab harum iste unde distinctio numquam voluptates, eligendi tempore excepturi!
+        </p>
+        <p>
+            Este site foi construído durante a
+            <a href="https://www.alura.com.br/imersao-css">
+                Imersão CSS - Alura!</a> ;)
+        </p>
+
+    </section>
+
+    <section class="portfolio container" id="portfolio">
         <h2>Projetos</h2>
 
         <div class="grid">
-            <figure>
-                <img class="img-portfolio" src="../imersaocss/img/CERTIFICADO.png" alt="eCommerce">
-                <figcaption>Quarentena Dev Alura</figcaption>
-            </figure>
-            <figure>
-                <img class="img-portfolio" src="../imersaocss/img/pag apresent arbyte.png">
-                <figcaption>Página de Apresentação ArByte</figcaption>
-            </figure>
+
+            <div class="flip-card">
+                <div class="card">
+                    <figure class="card-front">
+                        <img class="img-portfolio" src="../imersaocss/img/CERTIFICADO.png" alt="eCommerce">
+                        <figcaption>Quarentena Dev Alura</figcaption>
+                    </figure>
+                    <div class="card-verso">
+                        Parte de trás
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="card">
+                    <figure class="card-front">
+                        <img class="img-portfolio" src="../imersaocss/img/pag apresent arbyte.png">
+                        <figcaption>Página de Apresentação ArByte</figcaption>
+                    </figure>
+                    <div class="card-verso">
+                        Parte de trás
+                    </div>
+                </div>
+            </div>
         </div>
-        <section class="contato" id="contato">
+        </div>
+        <section class="contato container" id="contato">
             <h2>Contato</h2>
             <div class="grid icons">
                 <a target="_blank" href="https://github.com/nailanalopes">

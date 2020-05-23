@@ -104,12 +104,22 @@ a:hover {
     line-height: 1em;
 }
 
+.sobre,
 .contato,
 .portfolio {
     padding: 2em;
     min-height: 100vh;
 }
 
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.sobre h2,
 .contato h2,
 .portfolio h2 {
     font-family: 'Cabin Sketch', cursive;
@@ -118,6 +128,27 @@ a:hover {
     margin-bottom: 1, 5em;
     font-size: 3em;
     font-style: italic;
+}
+
+.sobre p {
+    color: rgb(255, 253, 151);
+    text-indent: 2em;
+    margin-bottom: 1em;
+    text-align: justify;
+}
+
+.sobre a {
+    color: yellow;
+}
+
+.sobre .avatar {
+    margin-left: 2em;
+}
+
+@media (min-width: 600px) {
+    .sobre .avatar {
+        float: right;
+    }
 }
 
 .portfolio .grid {
@@ -149,15 +180,45 @@ a:hover {
 }
 
 .img-portfolio {
-    height: 160px;
-    width: 240px;
+    height: 180px;
+    width: 100%;
     object-fit: cover;
     object-position: left bottom;
     transition: transform 500ms;
 }
 
-.img-portfolio:hover {
+
+/*.img-portfolio:hover {
     transform: scale(1.2) rotate(-2deg)
+}*/
+
+.flip-card {
+    perspective: 600px;
+}
+
+.card {
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 2s;
+}
+
+.flip-card:hover .card {
+    transform: rotateY(180deg);
+}
+
+.card-front,
+.card-verso {
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+}
+
+.card-verso {
+    background-color: white;
+    height: 180px;
+    width: 100%;
+    transform: rotatey(180deg);
 }
 
 .contato .icons {
